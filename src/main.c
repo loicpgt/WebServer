@@ -1,12 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 #include "log/log.h"
+#include "web/server.h"
+
 
 int main(int argc, char const *argv[])
 {
-    LOG_INFO("Without parameters");
-    LOG_INFO("With parameters: %1.2f", 1.247);
-    LOG_WARNING("Warning log");
-    LOG_ERROR("Error log");
-    printf("Hello World!\n");
+    struct web_server* server = web_server_construct(DEFAULT_BACKLOG);
+    int runResult = web_server_run(server, DEFAULT_PORT);
+
+    web_server_destruct(server);
+    free(server);
+
     return 0;
 }

@@ -1,6 +1,6 @@
 ## C WebServer
 Hi, I was tired of not understanding what I was doing while learning C by developping a RayCaster..
-So instead I choose something that I think should help me understand the tools and how to work with a Unix system.
+So instead I choose something that should help me understand the tools and how to work with a Unix system.
 
 This project while be developped in C only with a Linux kernel (Ubuntu 25.0.X).
 

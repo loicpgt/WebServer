@@ -5,8 +5,8 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
 # Add source files
-include_directories(src/log)
-file(GLOB SOURCES src/*.c)
+include_directories(src/**)
+file(GLOB_RECURSE SOURCES src/*.c)
 
 add_executable(webserver ${SOURCES})
 
